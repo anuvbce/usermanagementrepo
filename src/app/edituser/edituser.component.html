@@ -9,42 +9,42 @@
 
         <div class = " form-group">
 
-            <mat-form-field>
-                <label>
-                    First Name
+            <mat-form-field appearance="outline" class="user-details">
+                <label class="labels">
+                    First Name:
                 </label>
-                <input matInput formControlName="firstName" >
+                <input class="inputs" matInput formControlName="firstName" >
                 <mat-error *ngIf="editUserForm.get('firstName')?.hasError('required')">name is Required</mat-error>
             </mat-form-field>
         </div>
         <div class = " form-group">
 
-            <mat-form-field>
-                <label>
-                    last Name
+            <mat-form-field appearance="outline" class="user-details">
+                <label class="labels">
+                    last Name:
                 </label>
-                <input matInput formControlName="lastName" >
+                <input class="inputs" matInput formControlName="lastName" >
             </mat-form-field>
         </div> <div class = " form-group">
 
-            <mat-form-field>
-                <label>
-                    Email
+            <mat-form-field appearance="outline" class="user-details">
+                <label class="labels">
+                    Email:
                 </label>
-                <input matInput type = "email" formControlName="email" >
+                <input matInput class="inputs" type = "email" formControlName="email" >
                 <mat-error *ngIf="editUserForm.get('email')?.touched && editUserForm.get('email')?.invalid">Email is required</mat-error>
 
             </mat-form-field>
         </div> <div class = " form-group">
 
-            <mat-form-field>
-                <label>
-                    Department
+            <mat-form-field appearance="outline" class="user-details">
+                <label class="labels">
+                    Department:
                 </label>
-                <input matInput formControlName="department" >
+                <input matInput class="inputs" formControlName="department" >
             </mat-form-field>
         </div>
-            <button mat-raised-button color="primary" [disabled]="!editUserForm.valid" type = "submit" >Edit User</button>
+            <button  class="primary" [disabled]="!editUserForm.valid" type = "submit"  >Edit User</button>
 
     </form>
 </mat-card-content>

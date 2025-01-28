@@ -1,6 +1,15 @@
 .primary{
     margin:12px;
-    background-color: lightblue;
-    border: none;
+    background-color: rgb(75, 91, 241);
+    border-style: groove;
+    border-color:rgb(75, 91, 241);
+    color:white;
+
+}
+.user-card{
+    margin: 50px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color:none;
 
 }

@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { User } from '../models/user';
 import { UserserviceService } from '../userservice.service';
-import { ActivatedRoute } from '@angular/router';
-
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-edituser',
   templateUrl: './edituser.component.html',
@@ -17,7 +16,8 @@ export class EdituserComponent implements OnInit {
 
   constructor(private userService: UserserviceService,
     private router: ActivatedRoute,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private route: Router
   ){
 
     this.editUserForm = this.formBuilder.group({
@@ -32,7 +32,6 @@ export class EdituserComponent implements OnInit {
 
 
   ngOnInit(){
-console.log("Edit clicked")
     const id = parseInt(this.router.snapshot.paramMap.get('id') || '')
     if (id !== 0){
       this.userService.getUserById(id).subscribe(data =>{
@@ -43,11 +42,14 @@ console.log("Edit clicked")
   }
 
   onSubmit(){
-
     if (this.editUserForm.valid){
       const updateUserData: User = this.editUserForm.value;
       console.log(updateUserData)
-      this.userService.editUser(updateUserData)
+      this.userService.editUser(updateUserData).subscribe(() =>{
+      alert("User  details updated")
+      
+      })
+
     }
   }
 
