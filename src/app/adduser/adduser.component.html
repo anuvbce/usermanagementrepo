@@ -9,39 +9,39 @@
 
         <div class = " form-group">
 
-            <mat-form-field>
-                <mat-label>
+            <mat-form-field class="user-details" appearance="outline">
+                <mat-label class="labels">
                     First Name
                 </mat-label>
-                <input matInput placeholder="Enter User Firstname" name="firstName" [(ngModel)] ="newUserForm.firstName" required minlength="4" maxlength="20">
+                <input matInput class="inputs" placeholder="Enter User Firstname" name="firstName" [(ngModel)] ="newUserForm.firstName" required minlength="4" maxlength="20">
                 <mat-error *ngIf="userForm.controls['firstName']?.touched && userForm.controls['firstName'].hasError('required')">Name is required</mat-error>
             </mat-form-field>
         </div>
         <div class = " form-group">
 
-            <mat-form-field>
-                <mat-label>
+            <mat-form-field class="user-details" appearance="outline">
+                <mat-label class="labels">
                     Last Name
                 </mat-label>
-                <input matInput placeholder="Enter User Lastname" name="lastName" [(ngModel)] ="newUserForm.lastName">
+                <input matInput  class="inputs" placeholder="Enter User Lastname" name="lastName" [(ngModel)] ="newUserForm.lastName">
             </mat-form-field>
         </div>
         <div class = " form-group">
 
-            <mat-form-field>
-                <mat-label>
-                    
+            <mat-form-field class="user-details" appearance="outline">
+                <mat-label class="labels">
+                    Email
                 </mat-label>
-                <input matInput placeholder="Enter User Email" name="email" [(ngModel)] ="newUserForm.email">
+                <input matInput class="inputs" placeholder="Enter User Email" name="email" [(ngModel)] ="newUserForm.email">
             </mat-form-field>
         </div>
         <div class = " form-group">
 
-            <mat-form-field>
-                <mat-label>
-                    
+            <mat-form-field appearance="outline" class="user-details">
+                <mat-label class="labels">
+                    Department
                 </mat-label>
-                <input matInput placeholder="Enter User Department" name="department" [(ngModel)] ="newUserForm.department">
+                <input matInput class="inputs" placeholder="Enter User Department" name="department" [(ngModel)] ="newUserForm.department">
             </mat-form-field>
         </div>
         <div>
