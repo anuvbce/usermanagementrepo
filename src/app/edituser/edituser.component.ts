@@ -13,19 +13,18 @@ export class EdituserComponent implements OnInit {
 
   editUserForm: FormGroup
 
-  userData: User | null = null
-  formBuilder: any;
+  userData!: User
 
   constructor(private userService: UserserviceService,
     private router: ActivatedRoute,
-    formBuilder: FormBuilder
+    private formBuilder: FormBuilder
   ){
 
     this.editUserForm = this.formBuilder.group({
-      firstName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20) ]],
-      lastName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20) ]],
-      email: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20) ]],
-      department: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20) ]]
+      firstName: ['', [Validators.required,, Validators.maxLength(20) ]],
+      lastName: ['', [Validators.required ]],
+      email: ['', [Validators.required, Validators.email ]],
+      department: ['', [Validators.required, Validators.maxLength(20) ]]
 
     })
 
@@ -33,9 +32,9 @@ export class EdituserComponent implements OnInit {
 
 
   ngOnInit(){
-
+console.log("Edit clicked")
     const id = parseInt(this.router.snapshot.paramMap.get('id') || '')
-    if (id != 0){
+    if (id !== 0){
       this.userService.getUserById(id).subscribe(data =>{
         this.userData = data;
         this.editUserForm.patchValue(this.userData)

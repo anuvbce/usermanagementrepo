@@ -31,22 +31,20 @@
                 <label>
                     Email
                 </label>
-                <input matInput formControlName="email" >
+                <input matInput type = "email" formControlName="email" >
+                <mat-error *ngIf="editUserForm.get('email')?.touched && editUserForm.get('email')?.invalid">Email is required</mat-error>
+
             </mat-form-field>
         </div> <div class = " form-group">
 
             <mat-form-field>
                 <label>
-                    Description
+                    Department
                 </label>
-                <input matInput formControlName="description" >
+                <input matInput formControlName="department" >
             </mat-form-field>
         </div>
-        <div class = " form-group">
-        <div>
-            <button mat-raised-button class="primary" [disabled]="!editUserForm.valid" type = "submit" >Edit User</button>
-        </div>
-        </div>
+            <button mat-raised-button color="primary" [disabled]="!editUserForm.valid" type = "submit" >Edit User</button>
 
     </form>
 </mat-card-content>
