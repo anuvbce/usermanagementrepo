@@ -17,10 +17,10 @@ constructor(private userService: UserserviceService,
 }
   newUserForm: User = {
     id: 0,
-    firstName: "Anu",
-    lastName: "Radha",
-    email: "anu@gmail.com",
-    department: "sales"
+    firstName: "",
+    lastName: "",
+    email: "",
+    department: ""
 
   }
 

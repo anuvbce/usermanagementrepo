@@ -44,8 +44,12 @@
   
    
     </table>
-    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
-</div>
+    
+    <a class="addlink" [routerLink]="'./add'">Add New USer</a>
+   
+    <mat-paginator class="paginator" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+
+  </div>
   
   
 </mat-card-content>

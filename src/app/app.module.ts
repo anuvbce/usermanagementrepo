@@ -20,7 +20,6 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +28,8 @@ import {MatButtonModule} from '@angular/material/button';
     AdduserComponent,
     DeleteuserComponent,
     EdituserComponent,
-    ViewuserComponent
+    ViewuserComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -44,7 +44,7 @@ import {MatButtonModule} from '@angular/material/button';
     HttpClientModule,
     FormsModule ,
     ReactiveFormsModule,
-    MatButtonModule 
+    MatButtonModule,
     
   ],
   providers: [],
