@@ -1,0 +1,13 @@
+.user-card{
+    margin: 50px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color:none;
+
+}
+.table{
+    width:100%;
+}
+.card-header{
+    justify-content: center;
+}
