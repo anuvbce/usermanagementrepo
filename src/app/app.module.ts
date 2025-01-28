@@ -18,7 +18,7 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -43,7 +43,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatPaginatorModule,
     HttpClientModule,
     FormsModule ,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    MatButtonModule 
     
   ],
   providers: [],

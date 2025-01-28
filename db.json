@@ -15,13 +15,6 @@
       "department": "Sales"
     },
     {
-      "id": "3",
-      "firstName": "Clementine Bauch",
-      "lastName": "Samantha",
-      "email": "Nathan@yesenia.net",
-      "department": "Admin"
-    },
-    {
       "id": "4",
       "firstName": "Patricia Lebsack",
       "lastName": "Karianne",
@@ -36,13 +29,6 @@
       "department": "Sales"
     },
     {
-      "id": "7",
-      "name": "Kurtis Weissnat",
-      "username": "Elwyn.Skiles",
-      "email": "Telly.Hoeger@billy.biz",
-      "department": "Operations"
-    },
-    {
       "id": "8",
       "firstName": "Nicholas Runolfsdottir V",
       "lastName": "Maxime_Nienow",
@@ -50,7 +36,14 @@
       "department": "Admin"
     },
     {
-      "id": 0,
+      "id": "0",
+      "firstName": "Anuradha ",
+      "lastName": "Radha",
+      "email": "anu@gmail.com",
+      "department": "sales"
+    },
+    {
+      "id": "0",
       "firstName": "Anuradha ",
       "lastName": "Radha",
       "email": "anu@gmail.com",
@@ -58,7 +51,14 @@
     },
     {
       "id": 0,
-      "firstName": "Anuradha ",
+      "firstName": "Anu",
+      "lastName": "Radha",
+      "email": "anu@gmail.com",
+      "department": "sales"
+    },
+    {
+      "id": 0,
+      "firstName": "Anu",
       "lastName": "Radha",
       "email": "anu@gmail.com",
       "department": "sales"
