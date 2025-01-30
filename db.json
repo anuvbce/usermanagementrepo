@@ -29,13 +29,6 @@
       "department": "Sales"
     },
     {
-      "id": "8",
-      "firstName": "Nicholas Runolfsdottir V",
-      "lastName": "Maxime_Nienow",
-      "email": "Sherwood@rosamond.me",
-      "department": "Admin"
-    },
-    {
       "id": "0",
       "firstName": "Anuradha ",
       "lastName": "Radha",
@@ -50,28 +43,28 @@
       "department": "sales"
     },
     {
-      "id": 0,
+      "id": "0",
       "firstName": "Anu",
       "lastName": "Radha",
       "email": "anu@gmail.com",
       "department": "sales"
     },
     {
-      "id": 0,
+      "id": "0",
       "firstName": "Anu",
       "lastName": "Radha",
       "email": "anu@gmail.com",
       "department": "sales"
     },
     {
-      "id": 0,
+      "id": "0",
       "firstName": "Anuradha",
       "lastName": "Major",
       "email": "anu@gmail.com",
       "department": "Operations"
     },
     {
-      "id": 0,
+      "id": "0",
       "firstName": "Anuradha",
       "lastName": "Major",
       "email": "anu@gmail.com",

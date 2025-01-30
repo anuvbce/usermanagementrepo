@@ -36,4 +36,4 @@
 3. ng generate interface <interfacename> - to generate interfaces
 4. ng generate service <servicename> - to generate services
 5. json-server --watch db.json - to work and manipulate with data
-6. ng serve - to see the ouput
+6. ng serve or npm start - to see the ouput
